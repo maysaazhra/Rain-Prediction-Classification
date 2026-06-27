@@ -175,7 +175,9 @@ Semua plot tersimpan di folder `images/`, meliputi:
 - Confusion matrix ketiga model
   <img width="2210" height="591" alt="image" src="https://github.com/user-attachments/assets/d3490c96-eed2-47c8-82c3-0f829cc4a09d" />
 - Grafik perbandingan metrik
+  <img width="1933" height="882" alt="image" src="https://github.com/user-attachments/assets/edaa0dd8-7d9d-419b-9bda-4d488cbccdd2" />
 - ROC Curve
+  
 - Feature importance (Random Forest)
 
 ---
