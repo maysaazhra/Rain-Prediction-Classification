@@ -14,12 +14,12 @@ Proyek Machine Learning untuk memprediksi apakah besok akan hujan berdasarkan da
 
 Prediksi cuaca merupakan salah satu tantangan utama dalam bidang meteorologi dan machine learning. Proyek ini bertujuan untuk membangun model klasifikasi yang dapat memprediksi apakah **besok akan terjadi hujan** (`RainTomorrow`) berdasarkan berbagai indikator cuaca hari ini seperti suhu, kelembaban, tekanan udara, kecepatan angin, dan lainnya.
 
-Lalu, kenapa kami memilih data Australia dibandingkan Indonesia?
-Karena "Dataset Australia dipilih karena ketersediaan data yang lengkap dan terpercaya. Meskipun data berasal dari Australia, prinsip meteorologi bersifat universal. Sebagai contoh, variabel seperti Humidity3pm dan Pressure3pm adalah indikator hujan yang berlaku di mana saja. Model ini dapat diadaptasi untuk data Indonesia dengan melatih ulang menggunakan data dari BMKG. Hal ini sejalan dengan tujuan pembelajaran untuk memahami proses end-to-end machine learning, terlepas dari geografis data."
-
 Permasalahan ini bersifat **binary classification**:
 - `0` (No) = Tidak hujan besok
 - `1` (Yes) = Hujan besok
+
+Lalu, kenapa kami memilih data Australia dibandingkan Indonesia?
+Karena "Dataset Australia dipilih karena ketersediaan data yang lengkap dan terpercaya. Meskipun data berasal dari Australia, prinsip meteorologi bersifat universal. Sebagai contoh, variabel seperti Humidity3pm dan Pressure3pm adalah indikator hujan yang berlaku di mana saja. Model ini dapat diadaptasi untuk data Indonesia dengan melatih ulang menggunakan data dari BMKG. Hal ini sejalan dengan tujuan pembelajaran untuk memahami proses end-to-end machine learning, terlepas dari geografis data."
 
 ---
 
