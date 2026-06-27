@@ -171,6 +171,7 @@ Semua plot tersimpan di folder `images/`, meliputi:
 - Heatmap korelasi
   <img width="1660" height="1483" alt="image" src="https://github.com/user-attachments/assets/3b588654-8ff5-4c58-849f-853c8698605b" />
 - Boxplot fitur kunci vs target
+  <img width="2385" height="738" alt="image" src="https://github.com/user-attachments/assets/6ba0a567-e553-45fd-936c-dc347c046736" />
 - Confusion matrix ketiga model
 - Grafik perbandingan metrik
 - ROC Curve
