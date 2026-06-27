@@ -179,6 +179,7 @@ Semua plot tersimpan di folder `images/`, meliputi:
 - ROC Curve
   <img width="1183" height="878" alt="image" src="https://github.com/user-attachments/assets/39b099f6-e86d-471b-82f9-14b080c5de8f" />
 - Feature importance (Random Forest)
+  <img width="1335" height="1029" alt="image" src="https://github.com/user-attachments/assets/18da5696-f4f6-4e3d-a020-dad6d08f3c1a" />
 
 ---
 
