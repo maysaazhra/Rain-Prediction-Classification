@@ -5,12 +5,8 @@ Proyek Machine Learning untuk memprediksi apakah besok akan hujan berdasarkan da
 ---
 
 ## Anggota Kelompok
-
-| Nama | NIM |
-|------|-----|
-| [Nama Anggota 1] | [NIM 1] |
-| [Nama Anggota 2] | [NIM 2] |
-| [Nama Anggota 3] | [NIM 3] |
+1. I Kadek Rio Adi Pranata Kusuma (103132400029)
+2. Maysa Azhra Fauziyyah (103132430005)
 
 ---
 
@@ -29,7 +25,8 @@ Permasalahan ini bersifat **binary classification**:
 **Nama:** Rain in Australia  
 **Sumber:** [Kaggle - Weather Dataset Rattle Package](https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package)  
 **Format:** CSV  
-**Jumlah Data:** 1.000 sampel (subset dari dataset asli 145.000+ baris)
+**Jumlah Data:** 145.460 sampel
+**Jumlah Fitur:** 23 kolom 
 
 ### Fitur Dataset
 
@@ -138,19 +135,34 @@ Jalankan seluruh cell secara berurutan dari atas ke bawah.
 ---
 
 ## Hasil Eksperimen & Evaluasi
+**Perbandingan Performa Model**
 
-| Model | Accuracy | Precision | Recall | F1-Score | AUC-ROC |
-|-------|----------|-----------|--------|----------|---------|
-| Logistic Regression | ~74% | ~65% | ~62% | ~63% | ~0.79 |
-| Decision Tree | ~76% | ~67% | ~65% | ~66% | ~0.76 |
-| **Random Forest** | **~79%** | **~71%** | **~67%** | **~69%** | **~0.84** |
+Model	Accuracy	Precision	Recall	F1-Score	AUC-ROC
+Logistic Regression	84.70%	72.39%	48.78%	58.29%	86.21%
+Decision Tree	84.38%	72.00%	46.98%	56.86%	84.96%
+Random Forest	85.17%	77.58%	45.49%	57.35%	87.14%
 
 > Nilai aktual dapat bervariasi sedikit tergantung environment. Jalankan notebook untuk hasil yang tepat.
+
+**Cross Validation (5-fold)-F1-Score**
+Model	Mean F1-Score	Std Dev
+Logistic Regression	0.5686	± 0.0018
+Decision Tree	0.5581	± 0.0106
+Random Forest	0.5605	± 0.0031
+
+**TOP 5 Fitur Terpenting (Random Forest)**
+1. Humidity3pm — 32.78%
+2. Rainfall — 9.41%
+3. RainToday — 7.24%
+4. Sunshine — 7.09%
+5. WindGustSpeed — 6.26%
 
 ### Visualisasi Hasil
 
 Semua plot tersimpan di folder `images/`, meliputi:
 - Distribusi kelas target
+  
+
 - Analisis missing values
 - Distribusi fitur numerik
 - Heatmap korelasi
@@ -164,10 +176,12 @@ Semua plot tersimpan di folder `images/`, meliputi:
 
 ## Kesimpulan
 
-1. **Random Forest** terbukti sebagai model terbaik dengan accuracy dan AUC-ROC tertinggi, berkat kemampuannya menggabungkan banyak pohon keputusan untuk mengurangi variance.
-2. **Fitur terpenting** dalam prediksi hujan adalah `Humidity3pm`, `Pressure3pm`, dan `Sunshine` — sesuai dengan pengetahuan meteorologi bahwa kelembaban dan tekanan udara sore hari merupakan prediktor cuaca yang kuat.
-3. **Decision Tree** memiliki interpretabilitas lebih tinggi namun rentan terhadap overfitting dibanding Random Forest.
-4. **Logistic Regression** sebagai baseline linear masih memberikan performa cukup baik mengingat kesederhanaannya.
+1. **Random Forest** terbukti sebagai model terbaik dengan Accuracy 85.17% dan AUC-ROC 87.14%, berkat kemampuannya menggabungkan banyak pohon keputusan untuk mengurangi variance.
+2.  **Fitur terpenting** dalam prediksi hujan adalah Humidity3pm, Rainfall, RainToday, Sunshine, dan WindGustSpeed — sesuai dengan pengetahuan meteorologi bahwa kelembaban dan curah hujan merupakan prediktor cuaca yang kuat.
+3.  **Decision Tree** memiliki interpretabilitas lebih tinggi namun rentan terhadap overfitting dibanding Random Forest.
+4.   **Logistic Regression** sebagai baseline linear masih memberikan performa cukup baik (84.70%) mengingat kesederhanaannya.
+
+**Rekomendasi:** Random Forest dipilih sebagai model final karena lebih robust terhadap overfitting dan mampu menangani fitur dengan distribusi beragam.
 
 ---
 
@@ -176,3 +190,10 @@ Semua plot tersimpan di folder `images/`, meliputi:
 - Dataset: [Kaggle - Rain in Australia](https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package)
 - Scikit-learn Documentation: https://scikit-learn.org/stable/
 - Pedregosa et al. (2011). *Scikit-learn: Machine Learning in Python*. JMLR 12, pp. 2825-2830.
+
+## Informasi Tugas
+Atribut	Keterangan
+Mata Kuliah	Machine Learning
+Jenis Tugas	Tugas Besar / Final Project
+Semester	4
+Tahun Ajaran	2024/2025
