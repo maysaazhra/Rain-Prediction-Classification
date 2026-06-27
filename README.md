@@ -167,6 +167,7 @@ Semua plot tersimpan di folder `images/`, meliputi:
 - Analisis missing values
   <img width="1480" height="729" alt="image" src="https://github.com/user-attachments/assets/8adfb1f3-594e-427c-a9ad-c8dfa757a987" />
 - Distribusi fitur numerik
+  <img width="2385" height="1769" alt="image" src="https://github.com/user-attachments/assets/022a0702-fda6-4359-8705-0240b77ec655" />
 - Heatmap korelasi
 - Boxplot fitur kunci vs target
 - Confusion matrix ketiga model
