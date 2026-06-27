@@ -161,8 +161,7 @@ Random Forest	0.5605	± 0.0031
 
 Semua plot tersimpan di folder `images/`, meliputi:
 - Distribusi kelas target
-  
-
+  <img width="1649" height="738" alt="image" src="https://github.com/user-attachments/assets/d583e06b-5709-42e7-bc57-4e679842b148" /> 
 - Analisis missing values
 - Distribusi fitur numerik
 - Heatmap korelasi
