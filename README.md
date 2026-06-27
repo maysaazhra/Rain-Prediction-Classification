@@ -14,6 +14,9 @@ Proyek Machine Learning untuk memprediksi apakah besok akan hujan berdasarkan da
 
 Prediksi cuaca merupakan salah satu tantangan utama dalam bidang meteorologi dan machine learning. Proyek ini bertujuan untuk membangun model klasifikasi yang dapat memprediksi apakah **besok akan terjadi hujan** (`RainTomorrow`) berdasarkan berbagai indikator cuaca hari ini seperti suhu, kelembaban, tekanan udara, kecepatan angin, dan lainnya.
 
+Lalu, kenapa kami memilih data Australia dibandingkan Indonesia?
+Karena "Dataset Australia dipilih karena ketersediaan data yang lengkap dan terpercaya. Meskipun data berasal dari Australia, prinsip meteorologi bersifat universal. Sebagai contoh, variabel seperti Humidity3pm dan Pressure3pm adalah indikator hujan yang berlaku di mana saja. Model ini dapat diadaptasi untuk data Indonesia dengan melatih ulang menggunakan data dari BMKG. Hal ini sejalan dengan tujuan pembelajaran untuk memahami proses end-to-end machine learning, terlepas dari geografis data."
+
 Permasalahan ini bersifat **binary classification**:
 - `0` (No) = Tidak hujan besok
 - `1` (Yes) = Hujan besok
@@ -145,11 +148,19 @@ Jalankan seluruh cell secara berurutan dari atas ke bawah.
 > Nilai aktual dapat bervariasi sedikit tergantung environment. Jalankan notebook untuk hasil yang tepat.
 
 **Cross Validation (5-fold)-F1-Score**
-Model	Mean F1-Score	Std Dev
-Logistic Regression	0.5686	± 0.0018
-Decision Tree	0.5581	± 0.0106
-Random Forest	0.5605	± 0.0031
+| Model | Mean F1-Score | Std Dev | Keterangan |
+|:------|--------------:|--------:|:-----------|
+| Logistic Regression | 0.5686 | ± 0.0018 | Stabil, variance kecil |
+| Decision Tree | 0.5581 | ± 0.0106 | Variance lebih tinggi |
+| Random Forest | 0.5605 | ± 0.0031 | Stabil, konsisten |
 
+## 🏆 Model Terbaik
+**Random Forest** terpilih sebagai model terbaik dengan alasan:
+- Accuracy tertinggi: **85.17%**
+- AUC-ROC tertinggi: **87.14%**
+- Performa stabil dalam cross validation
+- Robust terhadap overfitting
+  
 **Top 5 Fitur Terpenting (Random Forest)**
 | Rank | Fitur | Importance Score |
 |:----:|:------|-----------------:|
@@ -160,7 +171,6 @@ Random Forest	0.5605	± 0.0031
 | 5 | WindGustSpeed | 6.26% |
 
 ### Visualisasi Hasil
-
 Semua plot tersimpan di folder `images/`, meliputi:
 - Distribusi kelas target
   <img width="1649" height="738" alt="image" src="https://github.com/user-attachments/assets/d583e06b-5709-42e7-bc57-4e679842b148" /> 
