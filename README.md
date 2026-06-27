@@ -136,11 +136,11 @@ Jalankan seluruh cell secara berurutan dari atas ke bawah.
 
 ## Hasil Eksperimen & Evaluasi
 **Perbandingan Performa Model**
-
-Model	Accuracy	Precision	Recall	F1-Score	AUC-ROC
-Logistic Regression	84.70%	72.39%	48.78%	58.29%	86.21%
-Decision Tree	84.38%	72.00%	46.98%	56.86%	84.96%
-Random Forest	85.17%	77.58%	45.49%	57.35%	87.14%
+| Model | Accuracy | Precision | Recall | F1-Score | AUC-ROC |
+|:------|---------:|----------:|-------:|---------:|--------:|
+| Logistic Regression | 84.70% | 72.39% | 48.78% | 58.29% | 86.21% |
+| Decision Tree | 84.38% | 72.00% | 46.98% | 56.86% | 84.96% |
+| **Random Forest** | **85.17%** | **77.58%** | 45.49% | 57.35% | **87.14%** |
 
 > Nilai aktual dapat bervariasi sedikit tergantung environment. Jalankan notebook untuk hasil yang tepat.
 
@@ -150,12 +150,14 @@ Logistic Regression	0.5686	± 0.0018
 Decision Tree	0.5581	± 0.0106
 Random Forest	0.5605	± 0.0031
 
-**TOP 5 Fitur Terpenting (Random Forest)**
-1. Humidity3pm — 32.78%
-2. Rainfall — 9.41%
-3. RainToday — 7.24%
-4. Sunshine — 7.09%
-5. WindGustSpeed — 6.26%
+**Top 5 Fitur Terpenting (Random Forest)**
+| Rank | Fitur | Importance Score |
+|:----:|:------|-----------------:|
+| 1 | **Humidity3pm** | **32.78%** |
+| 2 | Rainfall | 9.41% |
+| 3 | RainToday | 7.24% |
+| 4 | Sunshine | 7.09% |
+| 5 | WindGustSpeed | 6.26% |
 
 ### Visualisasi Hasil
 
@@ -163,6 +165,7 @@ Semua plot tersimpan di folder `images/`, meliputi:
 - Distribusi kelas target
   <img width="1649" height="738" alt="image" src="https://github.com/user-attachments/assets/d583e06b-5709-42e7-bc57-4e679842b148" /> 
 - Analisis missing values
+  
 - Distribusi fitur numerik
 - Heatmap korelasi
 - Boxplot fitur kunci vs target
