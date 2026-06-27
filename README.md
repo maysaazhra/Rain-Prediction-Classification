@@ -201,8 +201,10 @@ Semua plot tersimpan di folder `images/`, meliputi:
 - Pedregosa et al. (2011). *Scikit-learn: Machine Learning in Python*. JMLR 12, pp. 2825-2830.
 
 ## Informasi Tugas
-Atribut	Keterangan
-Mata Kuliah	Machine Learning
-Jenis Tugas	Tugas Besar / Final Project
-Semester	4
-Tahun Ajaran	2024/2025
+| **Mata Kuliah** | Machine Learning |
+|:---|:---|
+| **Jenis Tugas** | Tugas Besar / Final Project |
+| **Topik** | Klasifikasi Prediksi Hujan |
+| **Algoritma** | Logistic Regression, Decision Tree, Random Forest |
+| **Dataset** | Rain in Australia (Kaggle) |
+| **Link Repository** | [GitHub](https://github.com/maysaazhra/Rain-Prediction-Classification) |
