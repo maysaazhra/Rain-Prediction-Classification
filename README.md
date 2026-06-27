@@ -173,6 +173,7 @@ Semua plot tersimpan di folder `images/`, meliputi:
 - Boxplot fitur kunci vs target
   <img width="2385" height="738" alt="image" src="https://github.com/user-attachments/assets/6ba0a567-e553-45fd-936c-dc347c046736" />
 - Confusion matrix ketiga model
+  <img width="2210" height="591" alt="image" src="https://github.com/user-attachments/assets/d3490c96-eed2-47c8-82c3-0f829cc4a09d" />
 - Grafik perbandingan metrik
 - ROC Curve
 - Feature importance (Random Forest)
