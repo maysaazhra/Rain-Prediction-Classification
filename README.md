@@ -29,7 +29,6 @@ Karena "Dataset Australia dipilih karena ketersediaan data yang lengkap dan terp
 **Sumber:** [Kaggle - Weather Dataset Rattle Package](https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package)  
 **Format:** CSV  
 **Jumlah Data:** 145.460 sampel
-
 **Jumlah Fitur:** 23 kolom 
 
 ### Fitur Dataset
